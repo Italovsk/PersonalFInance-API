@@ -39,6 +39,8 @@ public class Main {
 
 // 4. Salvamos no arquivo de texto
                 ArquivoService service = new ArquivoService();
+                service.TransacaoDAO bancoService = new service.TransacaoDAO();
+                bancoService.salvarNoBanco(novaTransacao);
                 service.salvarNoArquivo(novaTransacao);
             } else if (opcao == 3) {
                 System.out.println("\n--- EXTRATO ATUAL ---");

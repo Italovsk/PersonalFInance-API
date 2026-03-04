@@ -12,7 +12,7 @@ public class ArquivoService {
     public void salvarNoArquivo(Transacao t) {
         DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        // O parâmetro 'true' indica que vamos adicionar dados ao final do arquivo (append)
+
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(NOME_ARQUIVO, true))) {
             String linha = String.format("[%s] %s: R$ %.2f | Data: %s",
                     t.getTipo(), t.getDescricao(), t.getValor(), t.getData().format(formatador));

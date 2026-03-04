@@ -25,3 +25,5 @@ O projeto segue padrões de organização de mercado:
 - [ ] Implementar conexão com banco de dados MySQL.
 - [ ] Adicionar filtros por categoria ou data.
 - [ ] Criar testes unitários com JUnit.
+- ### ✅ Atualização: Persistência com MySQL
+O projeto agora suporta armazenamento em banco de dados relacional MySQL, utilizando JDBC para comunicação e o padrão DAO para organização do código.
